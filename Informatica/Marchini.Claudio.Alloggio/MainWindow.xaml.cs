@@ -36,8 +36,8 @@ namespace Marchini.Claudio.Alloggio
             double mQuadri;
             Alloggio alloggio;
             if (!(string.IsNullOrEmpty(tbxAlloggioCodice.Text)
-              || string.IsNullOrEmpty(tbxAlloggioMQuadri.Text)
-              || string.IsNullOrEmpty(tbxAlloggioNPersone.Text)))
+              ||  string.IsNullOrEmpty(tbxAlloggioMQuadri.Text)
+              ||  string.IsNullOrEmpty(tbxAlloggioNPersone.Text)))
             {
                 if(int.TryParse(tbxAlloggioCodice.Text, out codice)
                 && int.TryParse(tbxAlloggioNPersone.Text, out nPersone)
