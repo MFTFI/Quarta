@@ -13,6 +13,15 @@ namespace Marchini.Claudio.Villa
         public MainWindow()
         {
             InitializeComponent();
+            OnBtnAggiornaClick(null, null);
+        }
+
+        private void OnBtnAggiornaClick(object sender, RoutedEventArgs e)
+        {
+            alloggi.Clear();
+            ville.Clear();
+            dtgVille.ItemsSource = null;
+            dtgAlloggi.ItemsSource = null;
             List<Villa> tmp = Villa.CaricaVille("Data.csv"); //carico le ville da file
             foreach (var casa in tmp) //divido la lista in due liste con le ville e gli alloggi
                 if (casa.Giardino == 0)

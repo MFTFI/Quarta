@@ -11,5 +11,6 @@
         <DataGrid x:Name="dtgVille"/>
         <Label Content="Alloggi"/>
         <DataGrid x:Name="dtgAlloggi"/>
+        <Button Content="Aggiorna Dati" Click="OnBtnAggiornaClick"/>
     </StackPanel>
 </Window>
