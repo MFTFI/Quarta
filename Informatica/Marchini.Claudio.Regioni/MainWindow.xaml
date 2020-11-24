@@ -1,0 +1,33 @@
+﻿<Window x:Class="Marchini.Claudio.Regioni.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Marchini.Claudio.Regioni"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <ComboBox x:Name="cmbRegioni" SelectionChanged="OncmbRegioniSelectionChanged">
+            <ComboBoxItem Content="Abruzzo"/>
+            <ComboBoxItem Content="Basilicata"/>
+            <ComboBoxItem Content="Calabria"/>
+            <ComboBoxItem Content="Campania"/>
+            <ComboBoxItem Content="Emilia Romagna"/>
+            <ComboBoxItem Content="Friuli Venezia Giulia"/>
+            <ComboBoxItem Content="Lazio"/>
+            <ComboBoxItem Content="Liguria"/>
+            <ComboBoxItem Content="Lombardia"/>
+            <ComboBoxItem Content="Marche"/>
+            <ComboBoxItem Content="Molise"/>
+            <ComboBoxItem Content="Piemonte"/>
+            <ComboBoxItem Content="Puglia"/>
+            <ComboBoxItem Content="Sardegna"/>
+            <ComboBoxItem Content="Sicilia"/>
+            <ComboBoxItem Content="Toscana"/>
+            <ComboBoxItem Content="Umbria"/>
+            <ComboBoxItem Content="Valle d'Aosta"/>
+            <ComboBoxItem Content="Veneto"/>
+        </ComboBox>
+        <DataGrid x:Name="dtgProvince"/>
+    </StackPanel>
+</Window>
