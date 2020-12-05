@@ -20,6 +20,7 @@ namespace Marchini.Claudio.Regioni
 
         private void CaricaProvincie()
         {
+            
             using (var sr = new StreamReader("Dati.csv"))
             {
                 while (!sr.EndOfStream)
