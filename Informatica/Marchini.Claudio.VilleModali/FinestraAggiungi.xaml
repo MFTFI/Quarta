@@ -1,0 +1,25 @@
+﻿<Window x:Class="Marchini.Claudio.VilleModali.FinestraAggiungi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Marchini.Claudio.VilleModali"
+        mc:Ignorable="d"
+        Title="Aggiungi" Height="450" Width="350" ResizeMode="CanMinimize">
+    <StackPanel>
+        <Label Content="Id" Height="30"/>
+        <TextBox x:Name="TbxId" Height="30"/>
+        <Label Content="Numero persone" Height="30"/>
+        <TextBox x:Name="TbxNPerosne" Height="30"/>
+        <Label Content="Metri" Height="30"/>
+        <TextBox x:Name="TbxMetri" Height="30"/>
+        <Label Content="Costo acqua unitario" Height="30"/>
+        <TextBox x:Name="TbxCostoAcqua" Height="30"/>
+        <Label Content="Metri giardino" x:Name="LblMetriGiardino" Height="30"/>
+        <TextBox x:Name="TbxMetriGiardino" Height="30"/>
+        <RadioButton Content="Villa" x:Name="RdbVilla" GroupName="alloggioOVilla" Checked="Rdb_Checked" Height="25"/>
+        <RadioButton Content="Alloggio" x:Name="RdbAlloggio" GroupName="alloggioOVilla" IsChecked="True" Checked="Rdb_Checked" Height="25"/>
+        <Button Content="Aggiungi" Click="BtnAggiungi_Click" Height="30" x:Name="BtnAggiungi"/>
+        <Button Content="Annulla" Click="BtnAnnulla_Click" Height="30"/>
+    </StackPanel>
+</Window>
