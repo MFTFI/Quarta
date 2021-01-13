@@ -27,7 +27,9 @@ namespace Marchini.Claudio.VilleModali
 
         private void BtnAnnulla_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            MessageBoxResult r =  MessageBox.Show("Davvero chiudere la finestra?");
+            if(!(r == MessageBoxResult.OK))
+                Close();
         }
 
         private void BtnAggiungi_Click(object sender, RoutedEventArgs e)

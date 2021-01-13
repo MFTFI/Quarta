@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProntoSoccorso", "ProntoSoccorso\ProntoSoccorso.csproj", "{22C4966B-74F0-4640-B520-3FBB8DBEF03C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22C4966B-74F0-4640-B520-3FBB8DBEF03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C4966B-74F0-4640-B520-3FBB8DBEF03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C4966B-74F0-4640-B520-3FBB8DBEF03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C4966B-74F0-4640-B520-3FBB8DBEF03C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02EF02F1-2517-46DE-A9C8-AFC52B957072}
+	EndGlobalSection
+EndGlobal
