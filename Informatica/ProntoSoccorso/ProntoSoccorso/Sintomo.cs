@@ -16,5 +16,10 @@ namespace ProntoSoccorso
             Nome = nome;
             Rischio = rischio;
         }
+
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
 }

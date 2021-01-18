@@ -19,7 +19,7 @@ namespace ProntoSoccorso
         public string Nome { get; private set; }
         public string Cognome { get; private set; }
         public List<Sintomo> Sintomi { get; private set; } = new List<Sintomo>();
-
+        public Gravita Gravita { get => OttientiCodiceGravita(); private set { } }
         public Paziente(string nome, string cognome, List<Sintomo> sintomi)
         {
             Nome = nome;

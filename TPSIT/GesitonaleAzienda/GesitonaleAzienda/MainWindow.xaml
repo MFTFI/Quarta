@@ -1,0 +1,30 @@
+﻿<Window x:Class="GesitonaleAzienda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GesitonaleAzienda"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition  Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+        <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Margin="250 20 250 20" Content="Aggiungi dipendente" Click="BtnAggiungiDipendenteClick"/>
+        <DataGrid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"/>
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="250 20 250 20"  Content="Aggiungi attività" Click="BtnAggiungiAttivitaClick"/>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"  Content="Calcola numero ore" Margin="60 20 60 20"/>
+        <TextBox Margin="20" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" x:Name="TbxOreCalcolate"/>
+    </Grid>
+</Window>

@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:ProntoSoccorso"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <Label Content="Nome"/>
+        <TextBox x:Name="TbxNome"/>
+        <Label Content="Cognome"/>
+        <TextBox x:Name="TbxCognome"/>
+        <Grid Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Grid.Column="0" x:Name="CmbSintomi"/>
+            <Button Grid.Column="1" Margin="20 30 20 30" Content="Aggiungi sintomo" Click="BtnAggiungiSintomoClick"/>
+            <DataGrid Grid.Column="2" x:Name="DtgSintomi"/>
+        </Grid>
+        <Button Content="Crea paziente" Click="BtnCreaPazienteClick"/>
+        <DataGrid x:Name="DtdPazienti" Height="100"/>
+        <Button Content="Chiama paziente" Click="BtnChiamaPazienteClick"/>
+    </StackPanel>
 </Window>
