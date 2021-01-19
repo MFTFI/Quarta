@@ -27,6 +27,10 @@ namespace ProntoSoccorso
             Sintomi = sintomi;
         }
 
+        /// <summary>
+        /// La gravità di un paziente viene calcolata facendo la media della gravità di tutte le sue malattie
+        /// </summary>
+        /// <returns></returns>
         public Gravita OttientiCodiceGravita()
         {
             int tot = 0;
