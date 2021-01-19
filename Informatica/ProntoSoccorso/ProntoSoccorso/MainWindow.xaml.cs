@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace ProntoSoccorso
 {
@@ -43,6 +33,7 @@ namespace ProntoSoccorso
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+
         private void BtnAggiungiSintomoClick(object sender, RoutedEventArgs e)
         {
             List<Sintomo> sintomi = new List<Sintomo>(); //lista di sintomi nella datagrid
@@ -71,12 +62,15 @@ namespace ProntoSoccorso
                 MessageBox.Show("Il paziente deve avere un nome e un cognome");
                 return;
             }
+
             List<Sintomo> sintomi = new List<Sintomo>();
+
             if(DtgSintomi.Items.Count == 0)
             {
                 MessageBox.Show("Il paziente deve avere almeno un sintomo");
                 return;
             }    
+
             foreach (Sintomo sintomo in DtgSintomi.Items)
                 sintomi.Add(sintomo);
             pazienti.Add(new Paziente(nome, cognome, sintomi));
@@ -115,10 +109,8 @@ namespace ProntoSoccorso
         /// <param name="e"></param>
         private void DtgPazientiDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            string sintomi = "";
-            foreach (var sintomo in pazienti[DtgPazienti.SelectedIndex].Sintomi)
-                sintomi += sintomo.Nome + " ";
-            MessageBox.Show($"Il paziente {pazienti[DtgPazienti.SelectedIndex].Nome} {pazienti[DtgPazienti.SelectedIndex].Cognome} ha: {sintomi}");
+            SintomiPaziente sP = new SintomiPaziente(pazienti[DtgPazienti.SelectedIndex]);
+            sP.ShowDialog();
         }
     }
 }
