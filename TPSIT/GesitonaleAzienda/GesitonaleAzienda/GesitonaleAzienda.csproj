@@ -71,6 +71,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Contratto.cs" />
+    <Compile Include="Dipendente.cs" />
     <Compile Include="FinestraCreaAttivita.xaml.cs">
       <DependentUpon>FinestraCreaAttivita.xaml</DependentUpon>
     </Compile>

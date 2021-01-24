@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GesitonaleAzienda"
         mc:Ignorable="d"
-        Title="FinestraCreaAttivita" Height="330" Width="460">
+        Title="FinestraCreaAttivita" Height="400" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,12 +19,14 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Content="Data attività"/>
-        <TextBox Margin="20" Grid.Row="0" Grid.Column="1" x:Name="TbxDataAttivita"/>
-        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="2" Content="Ore attività"/>
-        <TextBox Margin="20" Grid.Row="0" Grid.Column="3" x:Name="TbxOreAttivita"/>
-        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Descrizione attività"/>
-        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20"  Content="Carica attività"/>
+        <ComboBox Margin="20" Grid.Row="0" Grid.Column="1" x:Name="CmbData"/>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="2" Content="Ora attività"/>
+        <ComboBox Margin="20" Grid.Row="0" Grid.Column="3" x:Name="CmbOraAttivita"/>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Content="Descrizione"/>
+        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20"  Content="Carica attività" Click="BtnCreaAttivitaClick"/>
         <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20"  Content="Annulla"/>
-        <TextBox Margin="20" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" x:Name="TbxDescrizioneAttività"/>
+        <TextBox Margin="20" Grid.Row="1" Grid.Column="3" x:Name="TbxDescrizioneAttività"/>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Content="Numero ore" Margin="0.5,37"/>
+        <ComboBox Margin="20" Grid.Row="1" Grid.Column="1" x:Name="CmbNOre"/>
     </Grid>
 </Window>

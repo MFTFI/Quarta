@@ -17,16 +17,21 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Content="Nome"/>
         <TextBox Margin="20" Grid.Row="0" Grid.Column="1" x:Name="TbxNome"/>
         <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Content="Cognome"/>
         <TextBox Margin="20" Grid.Row="1" Grid.Column="1" x:Name="TbxCognome"/>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Grid.Row="0" Grid.Column="2" Text="Data di nascita"/>
-        <TextBox Margin="20" Grid.Row="0" Grid.Column="3" x:Name="TbxDataNascita"/>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Grid.Row="1" Grid.Column="2" Text="Luogo di nascita"/>
-        <TextBox Margin="20" Grid.Row="1" Grid.Column="3" x:Name="TbxLuogoNascita"/>
-        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20" Content="Crea dipendente"/>
-        <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20" Content="Annulla"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Grid.Row="0" Grid.Column="2" Text="Giorno di nascita"/>
+        <ComboBox Margin="20" Grid.Row="0" Grid.Column="3" x:Name="CmbGiornoNascita"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Grid.Row="1" Grid.Column="2" Text="Mese di nascita"/>
+        <ComboBox Margin="20" Grid.Row="1" Grid.Column="3" x:Name="CmbMeseNascita"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Grid.Row="2" Grid.Column="2" Text="Anno di nascita"/>
+        <ComboBox Margin="20" Grid.Row="2" Grid.Column="3" x:Name="CmbAnnoNascita"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Grid.Row="2" Grid.Column="0" Text="Luogo di nascita"/>
+        <TextBox Margin="20" Grid.Row="2" Grid.Column="1" x:Name="TbxLuogoNascita"/>
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="20" Content="Crea dipendente" Click="BtnCreaDipendenteClick"/>
+        <Button Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="20" Content="Annulla"/>
     </Grid>
 </Window>

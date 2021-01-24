@@ -20,9 +20,23 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+        <DataGrid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="DtgDipendenti" SelectionChanged="DtgDipendentiSelectionChanged">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Modifica" Click="CmbDipendenteModificaClick"/>
+                    <MenuItem Header="Elimina" Click="CmbDipendenteEliminaClick"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
         <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Margin="250 20 250 20" Content="Aggiungi dipendente" Click="BtnAggiungiDipendenteClick"/>
-        <DataGrid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"/>
+        <DataGrid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" x:Name="DtgContratti">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Modifica" Click="CmbAttivitaModificaClick"/>
+                    <MenuItem Header="Elimina" Click="CmbAttivitaEliminaClick"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
         <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="250 20 250 20"  Content="Aggiungi attività" Click="BtnAggiungiAttivitaClick"/>
         <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"  Content="Calcola numero ore" Margin="60 20 60 20"/>
         <TextBox Margin="20" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" x:Name="TbxOreCalcolate"/>
