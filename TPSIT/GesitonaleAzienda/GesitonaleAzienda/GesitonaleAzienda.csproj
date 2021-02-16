@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22C4966B-74F0-4640-B520-3FBB8DBEF03C}</ProjectGuid>
+    <ProjectGuid>{A3B610F7-80ED-4F5F-A741-C3AA37621E54}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ProntoSoccorso</RootNamespace>
-    <AssemblyName>ProntoSoccorso</AssemblyName>
+    <RootNamespace>GesitonaleAzienda</RootNamespace>
+    <AssemblyName>GesitonaleAzienda</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,10 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="SintomiPaziente.xaml.cs">
-      <DependentUpon>SintomiPaziente.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Sintomo.cs" />
+    <Page Include="FinestraCreaAttivita.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinestraCreaDipendente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,17 +71,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Contratto.cs" />
+    <Compile Include="Dipendente.cs" />
+    <Compile Include="FinestraCreaAttivita.xaml.cs">
+      <DependentUpon>FinestraCreaAttivita.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinestraCreaDipendente.xaml.cs">
+      <DependentUpon>FinestraCreaDipendente.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SintomiPaziente.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Paziente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

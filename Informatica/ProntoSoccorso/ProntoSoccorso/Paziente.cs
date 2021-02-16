@@ -19,7 +19,8 @@ namespace ProntoSoccorso
         public string Nome { get; private set; }
         public string Cognome { get; private set; }
         public List<Sintomo> Sintomi { get; private set; } = new List<Sintomo>();
-
+        public Gravita Gravita { get => OttientiCodiceGravita(); private set { } }
+       
         public Paziente(string nome, string cognome, List<Sintomo> sintomi)
         {
             Nome = nome;
@@ -27,6 +28,10 @@ namespace ProntoSoccorso
             Sintomi = sintomi;
         }
 
+        /// <summary>
+        /// La gravità di un paziente viene calcolata facendo la media della gravità di tutte le sue malattie
+        /// </summary>
+        /// <returns></returns>
         public Gravita OttientiCodiceGravita()
         {
             int tot = 0;
