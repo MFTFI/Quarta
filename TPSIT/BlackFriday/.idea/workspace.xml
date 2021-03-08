@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a405f3b9-8fe7-4323-8a73-7815970abcf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/carrello.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/libro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pagliaccio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/scatola.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/telefono.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Diagramma_dei_casi_duso.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/telefono.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Marchini.Zarrilli.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614516757739</updated>
       <workItem from="1614516758873" duration="2865000" />
+      <workItem from="1614877199048" duration="31000" />
     </task>
     <servers />
   </component>
@@ -67,6 +57,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
